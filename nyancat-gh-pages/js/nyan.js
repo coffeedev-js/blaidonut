@@ -1,4 +1,4 @@
-console.log('Nyan!')
+console.log('Blaid!')
 
 let playing = false;
 
@@ -37,3 +37,13 @@ function replicateSparks (_sparksRow) {
 		}
 	}
 })();
+
+
+
+function blaidEngine(){
+	var blaidonuts = 0;
+	setInterval(() => {
+	blaidonuts++
+	document.getElementById("countertext").innerHTML = "You've successfully wasted " + blaidonuts + " seconds";
+	}, 1000);
+}

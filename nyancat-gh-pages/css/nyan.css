@@ -1,9 +1,5 @@
-@font-face {
-  font-family: 'octicons';
-  src: url('../font/octicons.eot?#iefix') format('embedded-opentype'), url('../font/octicons.woff') format('woff'), url('../font/octicons.ttf') format('truetype'), url('../font/octicons.svg#octicons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 html,
 body {
   width: 100%;
@@ -14,7 +10,7 @@ body {
   overflow: hidden;
 }
 body {
-  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 13px/1.4 Helvetica, arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .blaider {
@@ -70,6 +66,15 @@ body {
   content: '\f00a';
 }
 
+#countertext{
+  font-size: large;
+  color: #ffffff;
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  z-index: 4;
+  font-family: 'Press Start 2P', cursive;
+}
 .clicktoplay {
   position: absolute;
   bottom: 0;
@@ -81,6 +86,7 @@ body {
   outline: none;
   z-index: 4;
   cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
 }
 .hidden {
   display: none !important;
