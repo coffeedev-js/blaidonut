@@ -15,10 +15,9 @@ body {
 
 .blaider {
   position: absolute;
-  margin-left: 50%;
-  margin-right: 50%;
+  width: 125%;
+  top: -60%;
   z-index: 1;
-  width: 80%;
 }
 .repo {
   position: absolute;
@@ -75,13 +74,35 @@ body {
   z-index: 4;
   font-family: 'Press Start 2P', cursive;
 }
+
+#version{
+  font-size:small;
+  color: #ffffff;
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  z-index: 4;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#donuts{
+  font-size: large;
+  color: #ffffff;
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+  z-index: 4;
+  font-family: 'Press Start 2P', cursive;
+}
+
+
 .clicktoplay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   color: black;
-  background: white;
+  background: rgb(54, 121, 155);
   padding: 6px 6px;
   outline: none;
   z-index: 4;

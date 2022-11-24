@@ -6,11 +6,25 @@
 
 	<link rel="icon" href="favicon.ico" />
 	<link rel="stylesheet" href="css/nyan.css"/>
+	<script src="https://kit.fontawesome.com/18267d4626.js" crossorigin="anonymous"></script>
 </head>
 <body onload="blaidEngine()">
+
 	<div class="counter">
-		<p id="countertext">???</p>
+		<p id="countertext">loading...</p>
 	</div>
+
+	<div class="blaidonuts">
+		<p id="donuts">Blaidonuts: 0 🍩</p>
+	</div>
+
+	<div class="versioninfo">
+		<p id="version">Alpha v. 1.2</p>
+	</div>
+
+	<!--<button onclick="donutMod()" id="donutMod" onmouseover="buyDonutModInfo()">Moar DonutZz | 5 </button>
+	<button onclick="buyBlaidwithHat()" id="buyBlaidwithHat" onmouseover="buyBlaidwithHatInfo()">Buy hat | 5 </button>-->
+
 	<div class="sparks-combo">
 		<div class="spark"></div>
 		<div class="spark"></div>
@@ -23,16 +37,15 @@
 	<div id="wave-b" class="hot rainbow"></div>
 	<div id="wave-b" class="cold rainbow"></div>
 
-
-	<a href="https://github.com/coffedev-js/blaidonut.com" title="Nyan cat on GitHub" class="repo">
-		<i class="octicon octicon-mark-github"></i>
-		<span>Nyan cat on GitHub</span>
+	<a href="https://github.com/coffedev-js/blaidonut.com" title="Blaidonut cat on GitHub" class="repo">
+		<i class="fab fa-github fa-lg"></i>
+		<span>Blaidonut on GitHub</span>
 	</a>
 	<div id="nyan-cat">
-		<img class="blaider" src = "placeholder.gif" alt="Blaider"></image>
+		<img class="blaider" src = "imgs/blaid.png" alt="Blaider"></image>
 	</div>
 	<div class="clicktoplay">
-		Click anywhere on screen to play sound
+		Click anywhere on screen to play sound 🔊
 	</div>
 
 	<a href="https://alexplatonov.com/" class="copy">
@@ -43,7 +56,6 @@
 		<source src="audio/nyan-cat.ogg" type="audio/ogg" />
 		<source src="audio/nyan-cat.mp3" type="audio/mpeg" />
 	</audio>
-
-	<script src="js/nyan.js"></script>
+	<script src="js/game.js"></script>
 </body>
 </html>
