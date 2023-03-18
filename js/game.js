@@ -2,7 +2,7 @@ console.log('Blaid!')
 
 var gameData = {
 	seconds: 0,
-	blaidonuts: 0,
+	blaidonuts: 15,
 	donutModCost: 15,
 	donutMod: false,
 	blaidwithhatCost: 15,
@@ -65,34 +65,38 @@ function blaidEngine(){
 	setInterval(() => {
 		gameData.blaidonuts++
 		document.getElementById("donuts").innerHTML = "Blaidonuts: " + gameData.blaidonuts + " 🍩";
-	}, 900000);
-	/*setInterval(()=> {
+		console.log("updated donuts")
+	}, 30000);
+	setInterval(()=> {
 		buttonCheck();
-		modCheck();
-	}, 60000);*/
+		//modCheck();
+		console.log("buttonCheck, modCheck!")
+		console.log("donuts: "+gameData.blaidonuts)
+	}, 5000);
 }
 
-/*function modCheck(){
+function modCheck(){
     if(gameData.donutMod == true) {
-      document.getElementById("buyDonutMod").disabled = true;
+      document.getElementById("buyDonutMod").disabled = true; //Disable upgrade button since mod is acquired
       document.getElementById("buyDonutMod").innerHTML = "Blaidonut Mod: Acquired ✅"
     }
   }
 
 function buttonCheck()  {
-  if(gameData.blaidonuts < gameData.blaidwithhatCost){
-   document.getElementById("buyBlaidwithHat").disabled = true;
-  } else document.getElementById("buyBlaidwithHat").disabled = false;
-  if(gameData.blaidonuts < gameData.blaidwithhatCost){
-   document.getElementById("buyBlaidwithHat").disabled = true;
-  } else document.getElementById("buyBlaidwithHat").disabled = false;
+	if(gameData.blaidonuts < gameData.donutModCost){
+	document.getElementById("donutMod").disabled = true;
+   } else document.getElementById("donutMod").disabled = false;
 }
 
 function buydonutMod() {
     if(gameData.blaidonuts >= gameData.donutModCost) {
       gameData.blaidonuts -= gameData.donutModCost
       gameData.donutMod = true
-      ocument.getElementById("donuts").innerHTML = "Blaidonuts: " + gameData.blaidonuts;
+      document.getElementById("donuts").innerHTML = "Blaidonuts: " + gameData.blaidonuts + " 🍩";
       document.getElementById("buyDonutMod").innerHTML = "Blaidonut Mod: Acquired ✅"
     }
-}*/
+}
+
+function loadinDonuts(){
+	document.getElementById("donuts").innerHTML = "Blaidonuts: " + gameData.blaidonuts + " 🍩";
+}
